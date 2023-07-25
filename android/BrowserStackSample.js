@@ -1,24 +1,25 @@
 let wd = require('wd');
 let assert = require('assert');
+const { env } = require('process');
 let asserters = wd.asserters;
 
 desiredCaps = {
   // Set your BrowserStack access credentials
-  'browserstack.user' : 'YOUR_USERNAME',
-  'browserstack.key' : 'YOUR_ACCESS_KEY',
+  'browserstack.user': 'markthompson_KAiSyj',
+  'browserstack.key': 'XiokGXyWFx5zyCWDdj19',
 
   // Set URL of the application under test
-  'app' : 'bs://<app-id>',
+  app: 'bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c',
 
   // Specify device and os_version for testing
-  'device' : 'Google Pixel 3',
-  'os_version' : '9.0',
+  device: 'Google Pixel 3',
+  os_version: '9.0',
 
   // Set other BrowserStack capabilities
-  'project' : 'First NodeJS project',
-  'build' : 'Node Android',
-  'name': 'first_test'
-};
+  project: 'First NodeJS project',
+  build: 'Node Android',
+  name: 'first_test',
+}
 
 // Initialize the remote Webdriver using BrowserStack remote URL
 // and desired capabilities defined above

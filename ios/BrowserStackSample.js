@@ -5,21 +5,21 @@ let Q = wd.Q;
 
 desiredCaps = {
   // Set your BrowserStack access credentials
-  'browserstack.user' : 'YOUR_USERNAME',
-  'browserstack.key' : 'YOUR_ACCESS_KEY',
+  'browserstack.user': 'markthompson_KAiSyj',
+  'browserstack.key': 'XiokGXyWFx5zyCWDdj19',
 
-    // Set URL of the application under test
-  'app' : 'bs://<app-id>',
+  // Set URL of the application under test
+  app: 'bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c',
 
   // Specify device and os_version for testing
-  'device' : 'iPhone 11 Pro',
-  'os_version' : '13',
+  device: 'iPhone 11 Pro',
+  os_version: '13',
 
   // Set other BrowserStack capabilities
-  'project' : 'First NodeJS project',
-  'build' : 'Node iOS',
-  'name': 'first_test'
-};
+  project: 'First NodeJS project',
+  build: 'Node iOS',
+  name: 'first_test',
+}
 
 // Initialize the remote Webdriver using BrowserStack remote URL
 // and desired capabilities defined above
